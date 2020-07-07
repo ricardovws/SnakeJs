@@ -18,7 +18,7 @@
         }
 
         #game-board {
-            background-color: #CCC;
+            background-color: rgba(151, 109, 109, 0.644);
             width: 100vmin;
             height: 100vmin;
             display: grid;
@@ -35,10 +35,22 @@
             background-color: hsl(50, 100%, 50%);
             border: .25vmin solid black;
         }
+
+        .score, #score_points {
+            color: white;
+            text-align: right;
+            margin-right: 1em;
+            font-size: larger;
+        }
+        #score_points {
+            width: 1.5em;
+        }
     </style>
     <script src="game.js" defer type="module"></script>
 </head>
 <body>
+<div class="score">SCORE:</div>
+<div id="score_points">0</div>
 <div id="game-board"></div>
 </body>
 </html>
